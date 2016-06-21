@@ -61,6 +61,14 @@ class Helper  {
 		$this->_UserRecord->save();
 	}
 	
+	function deleteData(){
+		$users  = $this->_UserRecord->all();
+		foreach ($users as $user){
+			$user->delete();
+		}
+		
+	}
+	
 	function isValidEmail($email){
 		return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
 	}

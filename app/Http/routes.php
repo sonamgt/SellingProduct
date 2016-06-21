@@ -19,3 +19,8 @@
  * route for calling API to get comment data.
  */
 Route::get('/',"InstaController@getCommentData");
+
+/**
+ *  route for deleting DataBase Records
+ */
+Route::get('/delete',"InstaController@deleteDB");

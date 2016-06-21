@@ -76,7 +76,9 @@ class InstaController extends Controller {
 	$this->_helper->sendMessage($data);
 	}
 
-	
+	function deleteDB() {
+		$this->_helper->deleteData();
+	}
 	
 	
 }

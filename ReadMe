@@ -1,0 +1,6 @@
+This project contains :
+1- route file to go through the controller(InstaController.php).
+2- InstaController.php gets the data of comments by instagram api(vinkla i used hare)and send fetched emailId and mobile number to Helper class(Helper.php).
+3- Helper.php gets mailID and mobile number,checks fro their validations ans send mail and insert data using UserRecord Model.
+4- UserRecord Model is eloquent which is for inserting user record in the table.
+5- To see Database all necessary information about mysql db is in .env file.which is hosted on AWS RDS server. 

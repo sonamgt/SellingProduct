@@ -6,3 +6,7 @@ CREATE TABLE `UserRecord` (
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`)
 )
+
+
+I have created table by using migration feature of laravel by create_user_table that is in dataBase folder of laravel.
+but for your use  i have given this query which will create the same table structure. 

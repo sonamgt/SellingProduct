@@ -53,7 +53,7 @@ class Helper  {
 	function sendSMS($number,$message) {
 		
 	}
-	
+	// this method is used for insert data in UserRecord table.
 	function insertData($data,$messge) {
 		$this->_UserRecord						= 		new UserRecord();
 		$this->_UserRecord->user_contacts	 	=   	$data;
@@ -61,6 +61,7 @@ class Helper  {
 		$this->_UserRecord->save();
 	}
 	
+	// this method is used for delete UserRecord table content 
 	function deleteData(){
 		$users  = $this->_UserRecord->all();
 		foreach ($users as $user){
@@ -69,6 +70,7 @@ class Helper  {
 		
 	}
 	
+	// check validity of email
 	function isValidEmail($email){
 		return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
 	}
